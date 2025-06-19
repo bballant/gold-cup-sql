@@ -3,13 +3,14 @@ import { Pool } from 'pg'
 import { Kysely, PostgresDialect } from 'kysely'
 
 const dialect = new PostgresDialect({
-  pool: new Pool({
-    database: 'postgres',
-    host: 'localhost',
-    user: 'bballant',
-    port: 5432,
-    max: 10,
-  })
+    pool: new Pool({
+        database: 'postgres',
+        host: 'localhost',
+        user: 'bballant',
+        password: process.env.DB_PASSWORD ?? '',
+        port: 5432,
+        max: 10,
+    })
 })
 
 // Database interface is passed to Kysely's constructor, and from now on, Kysely
@@ -17,5 +18,5 @@ const dialect = new PostgresDialect({
 // Dialect is passed to Kysely's constructor, and from now on, Kysely knows how
 // to communicate with your database.
 export const db = new Kysely<Database>({
-  dialect,
+    dialect,
 })
