@@ -27,3 +27,10 @@ export interface PetTable {
 export type Pet = Selectable<PetTable>
 export type NewPet = Insertable<PetTable>
 export type PetUpdate = Updateable<PetTable>
+
+export interface PsqlConnection {
+  database: string
+  host: string
+  user: string
+  port: number
+}

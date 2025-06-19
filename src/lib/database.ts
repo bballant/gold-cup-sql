@@ -1,14 +1,18 @@
-import type { Database } from '../model/Database.ts'
+import type { Database, PsqlConnection } from '../model/Database.ts'
 import { Pool } from 'pg'
 import { Kysely, PostgresDialect } from 'kysely'
 
+const connection: PsqlConnection = {
+    database: 'postgres',
+    host: 'localhost',
+    user: 'bballant',
+    port: 5432,
+}
+
 const dialect = new PostgresDialect({
     pool: new Pool({
-        database: 'postgres',
-        host: 'localhost',
-        user: 'bballant',
+        ...connection,
         password: process.env.DB_PASSWORD ?? '',
-        port: 5432,
         max: 10,
     })
 })
@@ -20,3 +24,5 @@ const dialect = new PostgresDialect({
 export const db = new Kysely<Database>({
     dialect,
 })
+
+export { connection }

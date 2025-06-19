@@ -1,6 +1,7 @@
 import type { PageServerLoad } from './$types'
-import { db } from '../lib/database'
+import { db, connection } from '../lib/database'
 import type { Schemata } from '../model/InformationSchema'
+import type { PsqlConnection } from '../model/Database'
 
 export const load: PageServerLoad = async () => {
   const schemata: Schemata[] = await db
@@ -15,5 +16,5 @@ export const load: PageServerLoad = async () => {
     ] as const)
     .execute()
 
-  return { schemata }
+  return { schemata, connection }
 }

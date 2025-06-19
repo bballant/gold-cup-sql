@@ -1,4 +1,5 @@
 <script lang="ts">
+  import type { PsqlConnection } from '../model/Database';
   export let data: {
     schemata: {
       catalog_name: string;
@@ -8,8 +9,17 @@
       default_character_set_schema: string | null;
       default_character_set_name: string | null;
     }[];
+    connection: PsqlConnection;
   };
 </script>
+
+<section class="mb-6">
+  <h2 class="text-xl font-semibold">Connection Details</h2>
+  <p>Database: {data.connection.database}</p>
+  <p>Host: {data.connection.host}</p>
+  <p>User: {data.connection.user}</p>
+  <p>Port: {data.connection.port}</p>
+</section>
 
 <h1 class="text-2xl font-bold mb-4">Database Schemas</h1>
 
