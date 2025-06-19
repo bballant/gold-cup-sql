@@ -1,10 +1,10 @@
 <script lang="ts">
-  import Table from '@skeletonlabs/skeleton-svelte/src/lib/Table.svelte';
-  import Thead from '@skeletonlabs/skeleton-svelte/src/lib/Thead.svelte';
-  import Tbody from '@skeletonlabs/skeleton-svelte/src/lib/Tbody.svelte';
-  import Tr from '@skeletonlabs/skeleton-svelte/src/lib/Tr.svelte';
-  import Th from '@skeletonlabs/skeleton-svelte/src/lib/Th.svelte';
-  import Td from '@skeletonlabs/skeleton-svelte/src/lib/Td.svelte';
+  import Table from '@skeletonlabs/skeleton-svelte/dist/components/Table.svelte';
+  import Thead from '@skeletonlabs/skeleton-svelte/dist/components/Thead.svelte';
+  import Tbody from '@skeletonlabs/skeleton-svelte/dist/components/Tbody.svelte';
+  import Tr from '@skeletonlabs/skeleton-svelte/dist/components/Tr.svelte';
+  import Th from '@skeletonlabs/skeleton-svelte/dist/components/Th.svelte';
+  import Td from '@skeletonlabs/skeleton-svelte/dist/components/Td.svelte';
   export let data: {
     schemata: {
       catalog_name: string;
