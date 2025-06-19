@@ -3,7 +3,7 @@ import { db } from '../lib/database'
 import type { Schemata } from '../model/InformationSchema'
 
 export const load: PageServerLoad = async () => {
-  const schemata = await db
+  const schemata: Schemata = await db
     .selectFrom('information_schema.schemata')
     .select([
       'catalog_name',
