@@ -1,9 +1,10 @@
+import { beforeAll, afterAll } from 'vitest'
 import { sql } from 'kysely'
 import { db } from './database'
 import * as PersonRepository from './PersonRepository'
 
 describe('PersonRepository', () => {
-  before(async () => {
+  beforeAll(async () => {
     await db.schema.createTable('person')
       .addColumn('id', 'serial', (cb) => cb.primaryKey())
       .addColumn('first_name', 'varchar', (cb) => cb.notNull())
@@ -19,7 +20,7 @@ describe('PersonRepository', () => {
     await sql`truncate table ${sql.table('person')}`.execute(db)
   })
 
-  after(async () => {
+  afterAll(async () => {
     await db.schema.dropTable('person').execute()
   })
 
