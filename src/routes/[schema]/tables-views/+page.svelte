@@ -15,7 +15,14 @@
   <h2 class="text-xl font-semibold mb-2">Tables</h2>
   <ul class="list-disc list-inside">
     {#each data.tables as table}
-      <li>{table.table_name} ({table.table_type})</li>
+      <li>
+        <a
+          class="text-blue-600 hover:underline"
+          href={`/${data.schema}/tables-views/${table.table_name}`}
+        >
+          {table.table_name}
+        </a> ({table.table_type})
+      </li>
     {/each}
   </ul>
 </section>
