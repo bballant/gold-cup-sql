@@ -6,10 +6,15 @@ import type {
 } from 'kysely'
 
 import type { PersonTable } from './Person'
+import type { TablesTable, ColumnsTable, ViewsTable, SchemataTable } from './InformationSchema'
 
 export interface Database {
   person: PersonTable
   pet: PetTable
+  'information_schema.tables': TablesTable
+  'information_schema.columns': ColumnsTable
+  'information_schema.views': ViewsTable
+  'information_schema.schemata': SchemataTable
 }
 
 export interface PetTable {
