@@ -59,3 +59,19 @@ export interface ViewsTable {
 export type Views = Selectable<ViewsTable>
 export type NewViews = Insertable<ViewsTable>
 export type ViewsUpdate = Updateable<ViewsTable>
+
+/**
+ * Mirrors information_schema.schemata in PostgreSQL
+ */
+export interface SchemataTable {
+  catalog_name: string
+  schema_name: string
+  schema_owner: string
+  default_character_set_catalog: string | null
+  default_character_set_schema: string | null
+  default_character_set_name: string | null
+}
+
+export type Schemata = Selectable<SchemataTable>
+export type NewSchemata = Insertable<SchemataTable>
+export type SchemataUpdate = Updateable<SchemataTable>
