@@ -37,7 +37,11 @@
     <tbody>
       {#each data.schemata as schema}
         <tr class="border-t">
-          <td class="px-4 py-2">{schema.schema_name}</td>
+          <td class="px-4 py-2">
+            <a class="text-blue-600 hover:underline" href="/{schema.schema_name}/tables-views">
+              {schema.schema_name}
+            </a>
+          </td>
           <td class="px-4 py-2">{schema.schema_owner}</td>
           <td class="px-4 py-2">{schema.default_character_set_catalog ?? '–'}</td>
           <td class="px-4 py-2">{schema.default_character_set_schema ?? '–'}</td>
