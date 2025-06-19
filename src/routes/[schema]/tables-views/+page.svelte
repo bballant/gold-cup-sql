@@ -31,7 +31,14 @@
   <h2 class="text-xl font-semibold mb-2">Views</h2>
   <ul class="list-disc list-inside">
     {#each data.views as view}
-      <li>{view.table_name}</li>
+      <li>
+        <a
+          class="text-blue-600 hover:underline"
+          href={`/${data.schema}/tables-views/views/${view.table_name}`}
+        >
+          {view.table_name}
+        </a>
+      </li>
     {/each}
   </ul>
 </section>
