@@ -2,7 +2,6 @@ import type {
   ColumnType,
   Generated,
   Insertable,
-  JSONColumnType,
   Selectable,
   Updateable,
 } from 'kysely'
@@ -42,12 +41,14 @@ export interface PersonTable {
   // is the type of the JSON object/array retrieved from the database,
   // and the insert and update types are always `string` since you're
   // always stringifying insert/update values.
+  /*
   metadata: JSONColumnType<{
     login_at: string
     ip: string | null
     agent: string | null
     plan: 'free' | 'premium'
   }>
+ */
 }
 
 // You should not use the table schema interfaces directly. Instead, you should
