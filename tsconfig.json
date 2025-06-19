@@ -4,6 +4,11 @@
 		"allowJs": true,
 		"checkJs": true,
 		"esModuleInterop": true,
+		"types": [
+			"svelte",
+			"vite/client",
+			"vitest/globals"
+		],
 		"forceConsistentCasingInFileNames": true,
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
