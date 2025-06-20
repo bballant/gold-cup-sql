@@ -23,7 +23,7 @@
 
 <h1 class="text-2xl font-bold mb-4">Database Schemas</h1>
 
-<div class="overflow-x-auto">
+<div class="max-w-6xl mx-auto overflow-x-auto">
   <table class="table-auto w-full border-collapse">
     <thead class="bg-gray-100">
       <tr>
