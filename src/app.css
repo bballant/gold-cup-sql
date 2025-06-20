@@ -7,3 +7,9 @@
 @source '../node_modules/@skeletonlabs/skeleton-svelte/dist';
 
 @plugin '@tailwindcss/typography';
+
+@layer components {
+  pre.shiki {
+    @apply p-4;
+  }
+}
