@@ -13,29 +13,31 @@
   };
 </script>
 
-<section class="mb-6 text-center">
-  <h2 class="text-xl font-semibold">Connection Details</h2>
-  <table class="table-auto mx-auto mb-4">
-    <tbody>
-      <tr>
-        <td class="px-4 py-2 font-semibold">Database</td>
-        <td class="px-4 py-2">{data.connection.database}</td>
-      </tr>
-      <tr>
-        <td class="px-4 py-2 font-semibold">Host</td>
-        <td class="px-4 py-2">{data.connection.host}</td>
-      </tr>
-      <tr>
-        <td class="px-4 py-2 font-semibold">User</td>
-        <td class="px-4 py-2">{data.connection.user}</td>
-      </tr>
-      <tr>
-        <td class="px-4 py-2 font-semibold">Port</td>
-        <td class="px-4 py-2">{data.connection.port}</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
+<div class="card max-w-md mx-auto mb-6">
+  <div class="card-body text-center">
+    <h2 class="text-xl font-semibold mb-2">Connection Details</h2>
+    <table class="table-auto mx-auto mb-4">
+      <tbody>
+        <tr>
+          <td class="px-4 py-2 font-semibold">Database</td>
+          <td class="px-4 py-2">{data.connection.database}</td>
+        </tr>
+        <tr>
+          <td class="px-4 py-2 font-semibold">Host</td>
+          <td class="px-4 py-2">{data.connection.host}</td>
+        </tr>
+        <tr>
+          <td class="px-4 py-2 font-semibold">User</td>
+          <td class="px-4 py-2">{data.connection.user}</td>
+        </tr>
+        <tr>
+          <td class="px-4 py-2 font-semibold">Port</td>
+          <td class="px-4 py-2">{data.connection.port}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
 
 <div class="max-w-6xl mx-auto overflow-x-auto">
