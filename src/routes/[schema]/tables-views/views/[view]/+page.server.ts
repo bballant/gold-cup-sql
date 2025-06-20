@@ -1,5 +1,5 @@
 import type { PageServerLoad } from './$types';
-import { db } from '../../../../../lib/database';
+import { db, connection } from '../../../../../lib/database';
 import { codeToHtml } from 'shiki';
 import type { Views } from '../../../../../model/InformationSchema';
 
@@ -19,5 +19,5 @@ export const load: PageServerLoad = async ({ params }) => {
     theme: 'vitesse-dark'
   });
 
-  return { schema, view, viewDetail, viewHtml };
+  return { schema, view, viewDetail, viewHtml, connection };
 };

@@ -1,5 +1,5 @@
 import type { PageServerLoad } from './$types';
-import { db } from '../../../lib/database';
+import { db, connection } from '../../../lib/database';
 
 export const load: PageServerLoad = async ({ params }) => {
   const schema = params.schema;
@@ -17,5 +17,5 @@ export const load: PageServerLoad = async ({ params }) => {
     .where('table_schema', '=', schema)
     .execute();
 
-  return { schema, tables, views };
+  return { schema, tables, views, connection };
 };
