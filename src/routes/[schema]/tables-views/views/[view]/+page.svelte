@@ -14,7 +14,7 @@
 
 <section class="mb-4">
   <h2 class="text-xl font-semibold mb-2">Definition</h2>
-  <div class="overflow-auto mb-4">
+  <div class="overflow-auto mb-4 p-8">
     {@html data.viewHtml}
   </div>
 </section>
