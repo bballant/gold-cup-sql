@@ -7,8 +7,9 @@ export const load: PageServerLoad = async ({ params }) => {
 
   const tables: Tables[] = await db
     .selectFrom('information_schema.tables')
-    .select(['table_name', 'table_type'] as const)
+    .select(['table_name'] as const)
     .where('table_schema', '=', schema)
+    .where('table_type', '=', 'BASE TABLE')
     .execute();
 
   const views: Views[] = await db
