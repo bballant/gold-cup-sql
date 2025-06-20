@@ -4,9 +4,6 @@ import { Kysely, PostgresDialect } from 'kysely'
 
 const connection: PsqlConnection = {
     database: 'postgres',
-    host: 'localhost',
-    user: 'bballant',
-    port: 5432,
 }
 
 const dialect = new PostgresDialect({

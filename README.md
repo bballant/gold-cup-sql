@@ -4,4 +4,8 @@ _Better than The Club World Cup?_
 
 This is a simple Postgres database explorer written with Sveltkit+Kysley+Skeleton that I wrote with o4-mini's help and some boring Gold Cup soccer games on in the background.
 
+### To Run
+
+Set up postgres shell environment so that `psql -d postgres` works.
+
 Run the app with `npm run dev`.
