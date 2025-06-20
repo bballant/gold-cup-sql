@@ -13,8 +13,8 @@
 
 <section class="mb-6">
   <h2 class="text-xl font-semibold mb-2">Tables</h2>
-  <div class="overflow-x-auto">
-    <table class="table-auto w-full border-collapse mb-4">
+  <div class="max-w-6xl mx-auto p-4 bg-white shadow rounded overflow-x-auto mb-6">
+    <table class="table-auto w-full border-collapse">
       <thead class="bg-gray-100">
         <tr>
           <th class="px-4 py-2 text-left">Table Name</th>
@@ -40,7 +40,7 @@
 
 <section>
   <h2 class="text-xl font-semibold mb-2">Views</h2>
-  <div class="overflow-x-auto">
+  <div class="max-w-6xl mx-auto p-4 bg-white shadow rounded overflow-x-auto mb-6">
     <table class="table-auto w-full border-collapse">
       <thead class="bg-gray-100">
         <tr>
