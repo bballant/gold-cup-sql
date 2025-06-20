@@ -13,6 +13,13 @@
   };
 </script>
 
+<h1 class="text-4xl font-bold mb-6 text-center">
+  <span class="text-warning-9">Gold</span>
+  <img src="/goldcup.png" alt="Gold Cup" class="h-8 inline mx-2" />
+  <span class="text-warning-9">Cup</span>
+  SQL
+</h1>
+
 <h2 class="text-2xl font-semibold mb-2 text-center">Connection Details</h2>
 <div class="card  preset-filled-surface-200-800 max-w-xs mx-auto mb-6">
   <div class="card-body text-center">
