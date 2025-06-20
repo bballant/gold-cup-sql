@@ -13,9 +13,9 @@
   };
 </script>
 
-<div class="card max-w-md mx-auto mb-6">
+<h2 class="text-xl font-semibold mb-2 text-center">Connection Details</h2>
+<div class="card preset-filled-secondary-500 max-w-md mx-auto mb-6">
   <div class="card-body text-center">
-    <h2 class="text-xl font-semibold mb-2">Connection Details</h2>
     <table class="table-auto mx-auto mb-4">
       <tbody>
         <tr>
