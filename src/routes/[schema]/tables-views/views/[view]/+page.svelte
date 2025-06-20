@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { Code } from '@skeletonlabs/skeleton-svelte';
   import type { Views } from '../../../../../model/InformationSchema';
   export let data: {
     schema: string;
     view: string;
     viewDetail: Views;
+    viewHtml: string;
   };
 </script>
 
@@ -14,9 +14,9 @@
 
 <section class="mb-4">
   <h2 class="text-xl font-semibold mb-2">Definition</h2>
-  <Code lang="sql" theme="github-dark" class="mb-4">
-    {data.viewDetail.view_definition}
-  </Code>
+  <div class="overflow-auto mb-4">
+    {@html data.viewHtml}
+  </div>
 </section>
 
 <section class="mb-4">

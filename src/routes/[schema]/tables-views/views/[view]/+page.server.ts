@@ -1,5 +1,6 @@
 import type { PageServerLoad } from './$types';
 import { db } from '../../../../../lib/database';
+import { codeToHtml } from 'shiki';
 import type { Views } from '../../../../../model/InformationSchema';
 
 export const load: PageServerLoad = async ({ params }) => {
@@ -13,5 +14,10 @@ export const load: PageServerLoad = async ({ params }) => {
     .where('table_name', '=', view)
     .executeTakeFirstOrThrow();
 
-  return { schema, view, viewDetail };
+  const viewHtml = await codeToHtml(viewDetail.view_definition ?? '', {
+    lang: 'sql',
+    theme: 'vitesse-dark'
+  });
+
+  return { schema, view, viewDetail, viewHtml };
 };
