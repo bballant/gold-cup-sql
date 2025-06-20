@@ -26,7 +26,7 @@
             <td class="px-4 py-2">
               <a
                 class="text-blue-600 hover:underline"
-                href={`/${data.schema}/tables-views/${table.table_name}`}
+                href={`/${data.schema}/tables-views/tables/${table.table_name}`}
               >
                 {table.table_name}
               </a>

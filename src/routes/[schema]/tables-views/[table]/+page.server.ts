@@ -1,6 +1,6 @@
 import type { PageServerLoad } from './$types';
-import { db } from '../../../../lib/database';
-import type { Columns } from '../../../../model/InformationSchema';
+import { db } from '../../../../../lib/database';
+import type { Columns } from '../../../../../model/InformationSchema';
 
 export const load: PageServerLoad = async ({ params }) => {
   const schema = params.schema;

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Columns } from '../../../../model/InformationSchema';
+  import type { Columns } from '../../../../../model/InformationSchema';
   export let data: {
     schema: string;
     table: string;
