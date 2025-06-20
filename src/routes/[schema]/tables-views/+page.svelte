@@ -7,8 +7,8 @@
   };
 </script>
 
-<h1 class="text-2xl font-bold mb-4">
-  Tables and Views for “{data.schema}”
+<h1 class="text-2xl font-bold mb-4 text-center">
+  Tables and Views for {data.schema}
 </h1>
 
 <section class="mb-6">
