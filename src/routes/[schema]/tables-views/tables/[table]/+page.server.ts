@@ -1,5 +1,5 @@
 import type { PageServerLoad } from './$types';
-import { db } from '../../../../../lib/database';
+import { db, connection } from '../../../../../lib/database';
 import type { Columns } from '../../../../../model/InformationSchema';
 
 export const load: PageServerLoad = async ({ params }) => {
@@ -19,5 +19,5 @@ export const load: PageServerLoad = async ({ params }) => {
     .where('table_name', '=', table)
     .execute();
 
-  return { schema, table, columns };
+  return { schema, table, columns, connection };
 };
