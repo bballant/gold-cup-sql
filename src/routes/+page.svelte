@@ -13,7 +13,7 @@
   };
 </script>
 
-<section class="mb-6">
+<section class="mb-6 text-center">
   <h2 class="text-xl font-semibold">Connection Details</h2>
   <p>Database: {data.connection.database}</p>
   <p>Host: {data.connection.host}</p>
@@ -21,10 +21,10 @@
   <p>Port: {data.connection.port}</p>
 </section>
 
-<h1 class="text-2xl font-bold mb-4">Database Schemas</h1>
 
 <div class="max-w-6xl mx-auto overflow-x-auto">
   <table class="table-auto w-full border-collapse">
+    <caption class="text-2xl font-bold mb-4 text-center">Database Schemas</caption>
     <thead class="bg-gray-100">
       <tr>
         <th class="px-4 py-2 text-left">Schema</th>
