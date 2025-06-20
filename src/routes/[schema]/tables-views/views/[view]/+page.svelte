@@ -9,7 +9,7 @@
 </script>
 
 <h1 class="text-2xl font-bold mb-4">
-  View Details for “{data.view}” in schema “{data.schema}”
+  {data.schema}.{data.view}
 </h1>
 
 <section class="mb-4">

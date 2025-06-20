@@ -8,7 +8,7 @@
 </script>
 
 <h1 class="text-2xl font-bold mb-4">
-  Columns for “{data.table}” in schema “{data.schema}”
+  {data.schema}.{data.table}
 </h1>
 
 <div class="overflow-x-auto">
