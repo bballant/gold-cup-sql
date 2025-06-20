@@ -13,12 +13,6 @@
   };
 </script>
 
-<h1 class="text-4xl preset-filled-surface-800-200 max-w-6xl mx-auto text-warning-contrast-900-100 font-bold mb-6 pt-4 pb-4 text-center">
-  <img src="/goldcup.png" alt="Gold Cup" class="h-8 inline mx-2" />
-  <span class="text-warning-9">Gold Cup SQL</span>
-  <img src="/goldcup.png" alt="Gold Cup" class="h-8 inline mx-2" />
-</h1>
-
 <h2 class="text-2xl font-semibold mb-2 mt-2 text-center">Connection Details</h2>
 <div class="border-2 border-surface-950-50 max-w-xs mx-auto mb-6 pt-4">
   <div>
